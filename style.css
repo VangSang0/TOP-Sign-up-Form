@@ -1,21 +1,50 @@
+
+@font-face {
+    font-family: odinProject;
+    src: url(font/Norse-Bold.otf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
-/* .side-bar{
-
-} */
 main{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
+.side-bar{
+    position: relative;
+}
 
-img{
+.back-image{
     height: 100vh;
     width: auto;
+    margin: 0;
+}
+.banner-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    margin: 0;
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.front-image{
+    height: 10rem;
+}
+
+.banner-wrapper h2{
+    color: white;
+    font-family: odinProject;
+    font-size: 5rem;
+    font-weight: bold;
 
 }
 
@@ -25,4 +54,27 @@ img{
     left: 10rem;
     color: white;
     font-style: italic;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.about-paragraph{
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sentence{
+    align-self: flex-start;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
 }
